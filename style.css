@@ -55,7 +55,7 @@ body {
     position: relative;
     display: flex;
     justify-content: center;
-    top: 38%;
+    top: 36%;
 }
 h1 {
     font-size: 4.5em;
@@ -88,13 +88,16 @@ p {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    
 }
+
 
 #projets {
     background-image: url(./assets/blurred_background.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    padding: 30px;
 }
 
 #contact {
@@ -102,6 +105,7 @@ p {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    padding: 30px;
 }
 
 /* ---------------------------------------------------------------------- */
@@ -110,13 +114,15 @@ p {
 #apropos h2{
     display: flex;
     justify-content: center;
+    padding-top: 30px;
 }
 
 .apropoContainer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 5%;
+    margin: 30px;
+    
     
 }
 
@@ -150,6 +156,9 @@ p {
 
 .btn-retour img {
     height: 50px;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
 }
 
 /* ------------------------------------------------------------------------------------- */
@@ -164,7 +173,9 @@ p {
     background-color: rgba(27, 27, 27, 0.4);
     height: 75px;
     align-items: center;
+    
 }
+
 
 a {
     text-decoration: none;
