@@ -1,0 +1,153 @@
+/* Réinitialisation */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    /* scroll-snap-type: y mandatory; */
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: rgb(20, 20, 20);
+}
+
+.container {
+    height: 100%;
+}
+
+.section {
+    height: 100vh;
+    scroll-snap-align: start;
+    padding: 2rem;
+    position: relative;
+    color: white;
+    transition-delay: 0.2s;
+}
+
+
+.accueil {
+    position: relative;
+    overflow: hidden;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.5);
+}
+
+.content {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 45%;
+}
+h1 {
+    font-size: 4.5em;
+}
+
+h2 {
+    font-size: 3em;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.2em;
+    max-width: 600px;
+}
+
+.section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 2s ease, transform 2s ease;
+    will-change: opacity, transform;
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#apropos {
+    background-image: url(./assets/blurred_background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#projets {
+    background-image: url(./assets/blurred_background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#contact {
+    background-image: url(./assets/blurred_background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* ---------------------------------------------------------------------- */
+/* a propos */
+
+#apropos h2{
+    display: flex;
+    justify-content: center;
+}
+
+.apropoContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 8%;
+    
+}
+
+.aproposLeft {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+
+}
+.aproposLeft img {
+    border-radius: 50%;
+}
+
+.aproposRight {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    
+}
+.aproposRight ul {
+    list-style-type: none;
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* nav */
+
+.nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    font-size: 1.8em;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
