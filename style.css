@@ -1,8 +1,14 @@
 /* Réinitialisation */
+@font-face {
+    font-family: Michroma;
+    src: url(./assets/Michroma/Michroma-Regular.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Michroma';
 }
 
 html,
@@ -11,7 +17,7 @@ body {
     /* scroll-snap-type: y mandatory; */
     overflow-y: scroll;
     scroll-behavior: smooth;
-    font-family: 'Segoe UI', sans-serif;
+    
     background-color: rgb(20, 20, 20);
 }
 
@@ -22,7 +28,6 @@ body {
 .section {
     height: 100vh;
     scroll-snap-align: start;
-    padding: 2rem;
     position: relative;
     color: white;
     transition-delay: 0.2s;
@@ -50,7 +55,7 @@ body {
     position: relative;
     display: flex;
     justify-content: center;
-    top: 45%;
+    top: 38%;
 }
 h1 {
     font-size: 4.5em;
@@ -111,7 +116,7 @@ p {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 8%;
+    padding-top: 5%;
     
 }
 
@@ -137,14 +142,28 @@ p {
     list-style-type: none;
 }
 
+.btn-retour {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 60px;
+}
+
+.btn-retour img {
+    height: 50px;
+}
+
 /* ------------------------------------------------------------------------------------- */
 /* nav */
 
 .nav ul{
-    display: flex;
     list-style-type: none;
+    font-size: 2.1em;
+    margin: 0;
+    display: flex;
     justify-content: space-around;
-    font-size: 1.8em;
+    background-color: rgba(27, 27, 27, 0.4);
+    height: 75px;
+    align-items: center;
 }
 
 a {
