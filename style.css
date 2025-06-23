@@ -15,14 +15,14 @@ html,
 body {
     height: 100%;
     /* scroll-snap-type: y mandatory; */
-    overflow-y: scroll;
+    
     scroll-behavior: smooth;
     
     background-color: rgb(20, 20, 20);
 }
 
-.container {
-    height: 100%;
+.content {
+    display: flex;
 }
 
 .section {
@@ -33,6 +33,19 @@ body {
     transition-delay: 0.2s;
 }
 
+.sidebar {
+    width: 20%;
+    border: 1px solid red;
+    
+}
+
+
+.sidebar ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
 
 .accueil {
     position: relative;
@@ -55,8 +68,23 @@ body {
     position: relative;
     display: flex;
     justify-content: center;
-    top: 36%;
+    flex-direction: column;
+    margin-top: 30%;
+    
 }
+.content h1 {
+    display: flex;
+    justify-content: center;
+    
+}
+.content h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.8em;
+}
+
+
+
 h1 {
     font-size: 4.5em;
 }
@@ -169,10 +197,12 @@ p {
     font-size: 2.1em;
     margin: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around; 
     background-color: rgba(27, 27, 27, 0.4);
-    height: 75px;
+    height: 80px;
     align-items: center;
+    
+    
     
 }
 
@@ -180,4 +210,42 @@ p {
 a {
     text-decoration: none;
     color: rgb(255, 255, 255);
+}
+
+/* -------------------------------------------- */
+.sectionSkill{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+.frontSkill {
+    
+    height: 100px;
+    width: 120px;
+}
+
+.frontSkill p{
+    margin-bottom: 10px;
+}
+
+.backSkill {
+    height: 100px;
+    width: 120px;
+    
+    
+} 
+.sectionOutil {
+    height: 100px;
+    width: 120px;
+}
+
+.sectionOutil p {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.sectionOutil img {
+    margin-top: 5px;
+    
+    
 }
